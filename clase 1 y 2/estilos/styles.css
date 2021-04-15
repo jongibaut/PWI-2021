@@ -1,0 +1,61 @@
+body {
+    background-image: url("https://i.ytimg.com/vi/CEq6_qnZgO4/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*body footer y header se usan una sola vez no hace falta ponerle clases*/
+
+.titulo {
+    background-color: saddlebrown;
+    color: white;
+    font-size: 75px;
+}
+
+.seccion {
+    background-color: tomato;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.margen {
+    background-color: tomato;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    margin-left: 100px !important;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 20%;
+    height: 100px;
+    /*
+    margin = me crea un espacio afuera de la caja.
+    margin: top, right, bottom, left
+    margin: 100px 10px 50px 20px;
+    margin: top/bottom, right/left
+    margin: 100px 10px;
+    */
+    margin: auto;
+    /*margin se sobreescribe todo se sobre escribe al menos que sea !important
+    
+    padding = me genera un espacio adentro de la caja.
+    padding: top right bottom left
+    padding: 100px 10px 50px 20px;
+    padding: top/bottom right/left
+    padding: 100px 10px;*/
+    padding: 50px;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-linkedin {
+    color: rgb(7, 7, 138);
+}
