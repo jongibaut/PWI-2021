@@ -1,0 +1,22 @@
+.bg-purple {
+    background-color: purple;
+    /*opacity: 50%;*/
+}
+
+body {
+    /*font-family: "Verdana, Geneva, Tahoma, sans-serif";*/
+}
+
+
+.btn-pink {
+    background-color: hotpink;
+    color: white;
+}
+
+.active {
+    color: aqua !important;
+}
+
+.card {
+    margin-top: 20px;
+}

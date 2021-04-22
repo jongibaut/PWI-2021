@@ -1,0 +1,50 @@
+.contenedor {
+    display: flex;
+    border: 2px solid black; 
+    height: 80vh; /*vh view height*/
+    background-color: aqua;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row; /*flex-rwap y flex-direction juntos*/
+    /*Mueve en el eje principal*/
+    justify-content: flex-end;
+    /*Mueve en el eje secundario*/
+    align-items: center; 
+}
+
+.elemento {
+    width: 100px; 
+    height: 100px;
+    background-color: red; 
+    border: 2px solid black;
+}
+
+img {
+    width: 90px; 
+    height: 90px;
+}
+
+.lista {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#p {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen {
+    order: -1;
+    flex-grow: 5;
+    align-self: flex-start;
+}
+
+.especial {
+    background-color: blue; 
+    order: -3;
+    flex-grow: 2;
+}

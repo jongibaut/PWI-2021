@@ -1,0 +1,24 @@
+.container {
+    width: 1200px; 
+    height: 500px; 
+    background-color: aquamarine;
+    display: grid;
+    /*Especifico el ancho de cada columna*/
+    grid-template-columns: 200px 500px 100px 100px;
+    /*Especifico la atura de cada fila*/
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.final {
+    background-color:red; 
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medio {
+    background-color: blue;
+}
