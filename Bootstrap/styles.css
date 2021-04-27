@@ -1,6 +1,12 @@
 .bg-purple {
     background-color: purple;
+    transition: 2s;
     /*opacity: 50%;*/
+}
+
+.bg-purple:hover {
+    background-color: tomato;
+    transform: scale(2);
 }
 
 body {
@@ -11,10 +17,35 @@ body {
 .btn-pink {
     background-color: hotpink;
     color: white;
+    transition: 0.5s;
 }
+
+.btn-pink:hover {
+    background-color: tomato;
+    color: white;
+
+
+}
+
+.btn-pink:active {
+    transform: rotate(-90deg);
+}
+
+/*
+:hover = cuadno estoy parado en el elemento
+:active = cuando estoy clickeando le elemento
+:link = link no visitado
+:visited = link ya visitado
+ transforms:
+ rotate, scale, scaleX, scaleY, skew, skewX, skewY, matrix, translate, translateY
+ */
 
 .active {
     color: aqua !important;
+}
+
+.transparente {
+    opacity: 0%;
 }
 
 .card {
