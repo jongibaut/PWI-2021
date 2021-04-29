@@ -4,6 +4,10 @@
     /*opacity: 50%;*/
 }
 
+.navbar-green {
+    color: green;
+}
+
 .bg-purple:hover {
     background-color: tomato;
     transform: scale(2);
