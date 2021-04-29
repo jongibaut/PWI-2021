@@ -107,6 +107,16 @@ for(let i = 0; i < lenguajes.length; i++){
 //Consigna: hacer un array de enteros y que cada vez que el entero sea mayor a 30 agregar un 100 al final del array.
 
 let array = [10, 100, 30, 31, 40, 7, 22, 35];
+const longitudInicial = array.length;
+
+for(let i = 0; i < longitudInicial; i++){
+    if(array[i] > 30){
+        array.push(100);       
+    }
+    console.log(longitudInicial);
+    console.log(array.length);
+}
+console.log(array);
 
 
 
