@@ -1,6 +1,7 @@
 let persona = {
     nombre: "Jon",
     apellido: "Gibaut",
+    pass: '1234',
     edad: 19,
     hobbies : [
         {nombre: "programar 🤓"},
@@ -8,6 +9,14 @@ let persona = {
     ]
 };
 console.log(persona.edad);
+const nombre = prompt("Ingrese el nombre");
+const contra = prompt("Ingrese el password");
+if( nombre == persona.nombre && contra == persona.pass){
+    alert("sesion inciada!");
+}
+else{
+    alert("datos incorrectos");
+}
 //JSON = [{}]
 const alumnos = [
     {
@@ -39,7 +48,7 @@ for(let i = 0; i < alumnos.length; i++){
     contador++;//contador = contador + 1;
 }
 console.log(acumulador, contador);
-
+/*
 let n1 = parseInt(prompt("Ingrese un numero"));
 let n2 = parseInt(prompt("Ingrese otro numero"));
 // parseInt me transforma el tipo de la variable de string a entero(int)
@@ -52,9 +61,40 @@ function numeros(){
     console.log(n1, n2);
     alert(n1);
 }
-
-// las funciones las puede ejecutar desde afuera del js (een otro JS o en el HTML) o desde el mismo JS en donde estoy.
+*/
+// las funciones las puede ejecutar desde afuera del js (en otro JS o en el HTML) o desde el mismo JS en donde estoy.
 function consola(){
     console.log("hola");
 }
 consola();
+
+// tarea: aplicarle bootstrap a un form y hacer una calculadora que tome dos numeros y los sume reste, multiplique o divida. +, -, *, /.
+function sumar(){
+    const n1 = parseInt(document.getElementById("n1").value);
+    const n2 = parseInt(document.getElementById("n2").value);
+    const suma = n1+n2;
+    alert(suma);
+}
+function restar(){
+    const n1 = parseInt(document.getElementById("n1").value);
+    const n2 = parseInt(document.getElementById("n2").value);
+    const resta  = n1-n2;
+    alert(resta);
+}
+function multiplicar(){
+    const n1 = parseInt(document.getElementById("n1").value);
+    const n2 = parseInt(document.getElementById("n2").value);
+    const mult = n1*n2;
+    alert(mult);
+}
+function dividir(){
+    const n1 = parseInt(document.getElementById("n1").value);
+    const n2 = parseInt(document.getElementById("n2").value);
+    if(n2  == 0){
+        alert("NO SE PUEDE DIVIDIR POR 0");
+    }
+    else{
+        const dividir = n1/n2;
+        alert(dividir);
+    }
+}
