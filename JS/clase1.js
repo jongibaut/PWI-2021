@@ -1,7 +1,7 @@
 // instalar extension ESLint
 /*
 Tipos de variables (en general):
-    -String (cadena de caracteres ex: "Messi")
+    -String (cadena de caracteres ex: "Messi") comillas dobles y comilals simples es lo mismo cual utilizo
     -Int (numero entero ex: 10)
     -Float (numero con decimales ex: 5.4)
     -Bool (variable de dos estados true (1) or false (0))
@@ -26,7 +26,7 @@ document.write("<h1 style= color:tomato; >Hola mundo :D</h1>");
 //document hace referencia al html linkeado .write escribe en el.
 console.log("Hola mundo de la consola :D");
 //console hace referencia a la consola .log me manda un mensaje por la consola.
-const edad = 10;
+const edad = prompt("Ingrese su edad");
 // if (condicion a cumplir) compara datos y todo lo que esta adentro de el (adentro de las llaves) es lo que se va a ejecutar cuando se cumple la condicion.  
 // >= (mayor o igual a) > (mayor a) < (menor a) <= (menor o igual a) == (igual de comparacion del dato porque tener un solo igual es de asignacion edad = 10 (le asigno a edad el valor 10)) === (equivalente a me verifica que tenga el mismo valor y que sea el mismo tipo de variable)
 if(edad >= 18) {
