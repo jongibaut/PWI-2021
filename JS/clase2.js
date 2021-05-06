@@ -98,3 +98,7 @@ function dividir(){
         alert(dividir);
     }
 }
+
+function redireccion(){
+    window.location.href = "clase1.html";
+}

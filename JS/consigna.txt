@@ -1,0 +1,4 @@
+Hacer una pagina web de 0 aplicando HTML, CSS y bootstrap, que solo la puedan acceder los usuarios que tenga en mi array de obetos de usuarios "iniciando sesion" y que me redireccione a la pagina, sino mostrar un alert que diga "no se pudo iniciar sesion", a la pagina final agregarle un form para poder agregar usuarios al array, las condiciones para agregarlo se deben cumplir todas, ningun espacio puede quedar vacion.
+
+Redireccionar: 
+window.location.href = "paginafinal.html"
