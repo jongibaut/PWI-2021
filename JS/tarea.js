@@ -2,11 +2,11 @@
 
 2. Hacer una funcion que dada un array de parametro, devuelva un array con los numeros superiores al promedio. */
 //1
-
+//find y empezar a pegarle a la API
 //funcion flecha es lo mismo que decir: function uno() {}
 
 const uno = () => {
- const numeros = [1, 10, 5];
+ const numeros = [1, 10, 5, 3, 4];
  //const cuadrado = nuevo(numeros);
  const cuadrado = numeros.map(numero => (numero * numero) + 1); // .map me crea un nuevo array con el valor que le paso en el return (si no pongo llaves y hago todo en una misma linea esa linea va a ser toamda con el return)
  console.log(cuadrado);
@@ -23,10 +23,10 @@ const uno = () => {
 
 const dos = () => {
     const numeros2 = [11, 6, 4, 10, 7, 15];
-    const prom = promedio(numeros2);
-    console.log(prom);
+    const average = promedio(numeros2);
+    console.log(average);
     //const numerosFiltrados = filtrado(numeros2, prom);
-    const numerosFiltrados = numeros2.filter(numero => numero > prom); // .filter me hace un array nuevo con todos los valores que cumplan con la condicion dada (numero > prom).
+    const numerosFiltrados = numeros2.filter(numero => numero > average); // .filter me hace un array nuevo con todos los valores que cumplan con la condicion dada (numero > prom).
     console.log(numerosFiltrados);
 }
 const promedio = (array) => {
@@ -130,8 +130,38 @@ const promedio = (array) => {
  }
  
  
- 
- 
+ //5 encontrar el usuario por el id que recibo por html.
+ const buscarPorId = () => {
+     const usuarios = [
+        {
+            id:1,
+            nombre: "Jon"
+        },
+        {
+            id:2,
+            nombre: "Messi"
+        }
+    ]
+    const user_id = parseInt(document.getElementById("_id").value);
+    //const usuario = encontrar(usuarios, user_id);
+    const usuario = usuarios.find(item => item.id === user_id); //me encuentra una variable en mi array que cumpla con la condicion dada y se la asigna a una variable nueva en este caso usuario.
+    console.log(usuario);
+ }
+//  const encontrar = (array, id) => {
+//     let user;
+//     array.forEach(item => {
+//         if(item.id === id){
+//             user = {
+//                 id: item.id,
+//                 nombre: item.nombre
+//             }
+//             break;
+//         }
+//     });
+//     return user;
+//  }
+
+
 
  
  window.onload = dos(); //me ejecuta una funcion cuando se carga la pagina
