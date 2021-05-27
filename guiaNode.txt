@@ -1,0 +1,17 @@
+NodeJS : ejecucion de JS del lado del servidor
+
+Peticiones Http: GET, POST, PUT, DELETE
+NPM (Node Package Manager): gestor de paquetes de node, me permite instalar modulos para node
+
+
+Framework Express: sirve para para la creacion de aplicaciones web node y me genera una estructura minima de una aplicacion web
+
+modulos a instalar para usar node:
+
+npm i(nstall) express -g(global a la pc): me perimte manejarme con los modulos
+npm i express-generator -g: crea estructura minima de carpetas para un proyecto
+npm i nodemon -g: ejecuta la pagina en tiempo """real"""
+
+como creo mi proyecto?
+
+express nombre --hbs

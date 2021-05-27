@@ -1,0 +1,16 @@
+Guia de git:
+	-creo una cuenta de github y descargo git bash (https://git-scm.com/downloads)
+
+
+Clonar cualquier repositorio de github:
+	-accedo al link del repositorio (ex: https://github.com/jongibaut/PWI-2021.git).
+	-entro a la carpeta donde quiera hacer el clon con git bash.
+	-pongo en git bash git clone LINK (ex: git clone https://github.com/jongibaut/PWI-2021.git).
+	-me carga ese repo en una carpeta nueva.
+
+Para tener el repo al dia(pullearlo):
+	-me paro en la carpeta del repo clonado en git bash.
+	-me conecto al git con estas lineas (hayq ue hacerlo una sola vez):
+		-git init
+		-git remote add origin LINK (ex: git remote add origin https://github.com/jongibaut/PWI-2021.git)
+	-para tener la version actualizada ponemos git pull origin master

@@ -49,6 +49,7 @@ const buscadorId = async () => {
     <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">${pokemon.forms[0].name}</h5>
+        <h5>${pokemon.types[0].type.name}</h5>
     </div>
   </div>
   </div>`;
