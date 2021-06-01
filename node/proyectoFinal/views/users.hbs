@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table table-hover text-center">
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    {{#each usuarios}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{nombre}}</td>
+                        <td>{{apellido}}</td>
+                        <td>
+                            <a href="/users/single/{{id}}">Ver mas</a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</div>
