@@ -17,4 +17,6 @@ const crearProducto = async(obj) => {
     return await pool.query(query, params);
 }
 
+// UPDATE ?? SET ? WHERE id = ?
+
 module.exports = {getAll, getSingle, crearProducto};

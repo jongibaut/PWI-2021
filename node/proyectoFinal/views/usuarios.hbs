@@ -1,0 +1,18 @@
+<div class="container-fluid bg-dark" style="height: 100vh">
+    <table class="table text-white">
+        <tr>
+            <th>id</th>
+            <th>Username</th>
+            <th>Pass</th>
+            <th>-</th>
+        </tr>
+        {{#each usuarios}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{username}}</td>
+            <td>{{pass}}</td>
+            <td><a href="/usuarios/single/{{id}}" class="btn btn-info">Ver Mas</a></td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

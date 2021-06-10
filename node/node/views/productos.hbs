@@ -1,0 +1,25 @@
+<div class="container-fluid  bg-dark" style="height : 100vh">
+    <table class="table  text-white">
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoria</th>
+            <th>-</th>
+        </tr>
+        {{#each productos}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nombre}}</td>
+            <td>{{descripcion}}</td>
+            <td>{{precio}}</td>
+            <td>{{stock}}</td>
+            <td>{{nombreCategoria}}</td>
+            <td><a href="/productos/single/{{id}}" class="btn btn-light">Ver mas <i class="fas fa-eye"></i></a></td>
+        </tr>
+        {{/each}}
+    </table>
+
+</div>
