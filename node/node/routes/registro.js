@@ -31,6 +31,13 @@ const create = async (req, res) => {
         });
     res.redirect('/productos');
 }
+const verify = async(req, res) => {
+    const {uid} = req.params;
+    console.log(uid);
+    const messageId = await model.verify(uid);
+    res.redirect('/productos');
+}
 router.get('/', showRegistro);
 router.post('/create', create);
+router.get('/verify/:uid', verify);
 module.exports = router;

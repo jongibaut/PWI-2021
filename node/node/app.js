@@ -10,6 +10,11 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const productos = require('./routes/productos');
 const registro = require('./routes/registro');
+const login = require('./routes/login');
+const adminIndex = require('./routes/admin/index');
+const adminProductos = require('./routes/admin/productos');
+const adminCategorias = require('./routes/admin/categorias');
+const adminUsuarios = require('./routes/admin/usuarios')
 
 const app = express();
 
@@ -27,6 +32,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/productos', productos);
 app.use('/registro', registro);
+app.use('/login', login);
+app.use('/admin', adminIndex);
+app.use('/admin/productos', adminProductos);
+app.use('/admin/usuarios', adminUsuarios);
+app.use('/admin/categorias', adminCategorias);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

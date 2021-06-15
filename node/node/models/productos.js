@@ -9,7 +9,7 @@ const getAll = async() => {
     return rows;
 }
 const getSingle = async(id) => {
-    const query = "SELECT p.id, p.nombre, p.descripcion, p.precio, p.stock, c.nombre AS nombreCategoria FROM ?? AS p JOIN ?? AS c ON p.id_categoria = c.id WHERE p.id = ? AND p.eliminado = 0";
+    const query = "SELECT p.id, p.nombre, p.descripcion, p.precio, p.stock, p.id_categoria, c.nombre AS nombreCategoria FROM ?? AS p JOIN ?? AS c ON p.id_categoria = c.id WHERE p.id = ? AND p.eliminado = 0";
     const params = [process.env.T_PRODUCTOS, process.env.T_CATEGORIAS, id];
     const rows = await pool.query(query, params);
     return rows;

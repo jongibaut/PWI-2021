@@ -1,0 +1,37 @@
+<div class="container-fluid bg-dark m-0" style="height : 100vh">
+    <div class="row justify-content-center align-items-center" style="height : 100vh">
+        <div class="col-7 text-light">
+            <form method="post" action="/admin/productos/update/{{producto.id}}">
+                <div class="form-group">
+                    <label for="nombre">Nombre del producto<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" value="{{producto.nombre}}">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion"
+                        value="{{producto.descripcion}}">
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio<span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" name="precio" id="precio" value="{{producto.precio}}">
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock<span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" name="stock" id="stock" value="{{producto.stock}}">
+                </div>
+                <label for="id_categoria">Categoria<span class="text-danger">*</span></label>
+                <!-- el name es id_categoria porque es lo que se envia a la bdd y los names tienen que tener el mismo nombre que los items de las tablas -->
+                <select name="id_categoria" id="id_categoria" class="form-select">
+                    <option value="{{producto.id_categoria}}">{{producto.nombreCategoria}}</option>
+                    {{#each categorias}}
+                    <option value="{{id}}">{{nombre}}</option>
+                    {{/each}}
+                </select>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-info mt-3">Modificar producto</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
