@@ -14,7 +14,8 @@ const login = require('./routes/login');
 const adminIndex = require('./routes/admin/index');
 const adminProductos = require('./routes/admin/productos');
 const adminCategorias = require('./routes/admin/categorias');
-const adminUsuarios = require('./routes/admin/usuarios')
+const adminUsuarios = require('./routes/admin/usuarios');
+const adminEmpleados = require('./routes/admin/empleados');
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use('/admin', adminIndex);
 app.use('/admin/productos', adminProductos);
 app.use('/admin/usuarios', adminUsuarios);
 app.use('/admin/categorias', adminCategorias);
+app.use('/admin/empleados', adminEmpleados);
 
 
 // catch 404 and forward to error handler
