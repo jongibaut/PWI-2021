@@ -13,7 +13,7 @@ const create = async (req, res) => {
 }
 const getAll = async (req, res) => {
     const empleados = await model.getAll();
-    console.log(empleados)
+    console.log(empleados);
     res.render('adminEmpleados', {empleados})
 }
 
