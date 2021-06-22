@@ -1,16 +1,24 @@
-Guia de git:
-	-creo una cuenta de github y descargo git bash (https://git-scm.com/downloads)
+Creo cuenta de github y descargo gitbash (https://git-scm.com/downloads)
 
+Crear repo:
+	1. Creo un repositorio en mi cuenta de github
+	2. En git bash me ubico en mi carpeta a subir al repo
+	3. Pongo git init (inicializa un repo vacio en mi carpeta)
+	4. Git remote add origin link_del_repo (me asigna el repositorio a la carpeta)
+	5. Git add . (aniade archivos dentro de la carpeta al repositorio linkeado anteriormente)
+	6. Si es la primera vez que usan git bash configuren sus datos (git config --global user.email "you@example.com"
+  	   git config --global user.name "Your Name")	
+	7. git commit -m "comentario"
+	8. git push origin master (pusheo (cargar) los datos a mi repo linkeado y pongo mi nombre de usuario y contrasenia)
 
-Clonar cualquier repositorio de github:
-	-accedo al link del repositorio (ex: https://github.com/jongibaut/PWI-2021.git).
-	-entro a la carpeta donde quiera hacer el clon con git bash.
-	-pongo en git bash git clone LINK (ex: git clone https://github.com/jongibaut/PWI-2021.git).
-	-me carga ese repo en una carpeta nueva.
+Modificar repo:
+	1. Git add . (va aniadir archivos nuevos o alterar archivos modificados)
+	2. Git commit -m "comentario"
+	3. Git push origin master
 
-Para tener el repo al dia(pullearlo):
-	-me paro en la carpeta del repo clonado en git bash.
-	-me conecto al git con estas lineas (hayq ue hacerlo una sola vez):
-		-git init
-		-git remote add origin LINK (ex: git remote add origin https://github.com/jongibaut/PWI-2021.git)
-	-para tener la version actualizada ponemos git pull origin master
+Clonar repos:
+	1. Git clone link_del_repo (me genera un clone del repositorio linkeado)
+
+Actualizar repos clonados:
+	1. Voy a la carpeta del repo clonado
+	2. Git pull origin master (me actualiza el respositorio linkeado clonado a la version mas nueva)

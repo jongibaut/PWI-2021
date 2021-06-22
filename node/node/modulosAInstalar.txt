@@ -1,0 +1,8 @@
+modulos a instalar en nuestro proyecto:
+npm i nodemailer
+npm i dotenv
+npm i mysql
+npm i util
+npm i sha1
+npm i uuid
+npm i multer
