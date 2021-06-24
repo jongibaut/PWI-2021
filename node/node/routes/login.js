@@ -9,11 +9,16 @@ const login = async (req, res) => {
     let {username, pass} = req.body;
     pass = sha1(pass);
     const logged = await auth(username, pass);
-    //operadores ternarios
-    logged.length == 0 //condicion
-        ? res.redirect('/login') // si se cumple la condicion
-        : null; // else
-    res.redirect('/admin');
+    if (logged.length === 0) {
+        res.render('login', {message: 'Usuario o pass incorrectos'});
+    }
+    else {
+        const [{id, admin}] = logged;
+        req.session.user = id;
+        req.session.admin = admin;
+        res.redirect('/usuarios');
+
+    }
 }
 
 router.get('/', showLogin);
