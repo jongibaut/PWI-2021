@@ -1,0 +1,34 @@
+<div class="container-fluid bg-dark m-0" style="height : 100vh">
+    <div class="row justify-content-center align-items-center" style="height : 100vh">
+        <div class="col-7 text-light">
+            <form method="POST" action="/admin/empleados/update/{{empleado.id}}" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nombre">Nombre<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" value="{{empleado.nombre}}">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="apellido" id="apellido" value="{{empleado.apellido}}">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono<span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" name="telefono" id="telefono"
+                        value="{{empleado.telefono}}">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Direccion<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="direccion" id="direccion"
+                        value="{{empleado.direccion}}">
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Modificar imagen<span class="text-danger">*</span></label>
+                    <input type="file" name="imagen" id="imagen">
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-info mt-3">Modificar empleado</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

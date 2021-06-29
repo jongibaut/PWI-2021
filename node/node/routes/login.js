@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const {auth} = require('./../models/usuarios')
 const sha1 = require('sha1');
+const {validateLogin} = require('./../middlewares/usuarios');
 
 const showLogin = (req, res) => res.render('login', {message : ''});
 
@@ -22,5 +23,5 @@ const login = async (req, res) => {
 }
 
 router.get('/', showLogin);
-router.post('/logged', login);
+router.post('/', validateLogin, login);
 module.exports = router;

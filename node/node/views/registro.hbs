@@ -1,7 +1,7 @@
 <div class="container-fluid bg-dark m-0" style="height : 100vh">
     <div class="row justify-content-center align-items-center" style="height : 100vh">
         <div class="col-7 text-light">
-            <form method="post" action="/registro/create">
+            <form method="post" action="/registro">
                 <div class="form-group">
                     <label for="username">Nombre de usuario<span class="text-danger">*</span></label>
                     <input type="text" class="form-control" name="username" id="username">
@@ -22,6 +22,7 @@
                     <button type="submit" class="btn btn-info mt-3">Registrate :D</button>
                 </div>
             </form>
+            <p class="text-danger text-center mt-3">{{message}}</p>
         </div>
 
     </div>

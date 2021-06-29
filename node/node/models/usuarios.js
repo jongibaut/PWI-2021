@@ -25,5 +25,9 @@ const update = async(id, obj) => {
     const params = [process.env.T_USUARIOS, obj, id];
     return await pool.query(query, params);
 }
-
-module.exports = {create, verify, auth, single, update}
+const all = async() => {
+    const query = "SELECT * FROM ??";
+    const params = [process.env.T_USUARIOS];
+    return await pool.query(query, params);
+}
+module.exports = {create, verify, auth, single, update, all}
