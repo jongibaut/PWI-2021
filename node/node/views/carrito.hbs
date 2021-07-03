@@ -1,0 +1,31 @@
+<div class="container-fluid  bg-dark" style="height : 100vh">
+    <table class="table  text-white">
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Total</th>
+            <th>-</th>
+        </tr>
+        {{#each carrito}}
+        <tr>
+            <td>{{id_producto}}</td>
+            <td>{{nombre}}</td>
+            <td>{{descripcion}}</td>
+            <td>{{precio}}</td>
+            <td></td>
+            <td></td>
+        </tr>
+        {{/each}}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{precioFinal}}</td>
+            <td><a href="/carrito/compra" class="btn btn-info">Finalizar compra</a></td>
+        </tr>
+    </table>
+
+</div>

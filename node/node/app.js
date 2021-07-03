@@ -15,6 +15,7 @@ const registro = require('./routes/registro');
 const login = require('./routes/login');
 
 const usuarios = require('./routes/usuarios');
+const carrito = require('./routes/carrito');
 
 const adminIndex = require('./routes/admin/index');
 const adminProductos = require('./routes/admin/productos');
@@ -49,6 +50,7 @@ app.use('/login', login);
 
 //USERS
 app.use('/usuarios',verifyUser, usuarios);
+app.use('/carrito', verifyUser, carrito);
 
 //ADMIN
 app.use('/admin',verifyAdmin, adminIndex);

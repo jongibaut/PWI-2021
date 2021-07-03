@@ -29,8 +29,13 @@ const del = async(id) => {
     const params = [process.env.T_PRODUCTOS, id];
     return await pool.query(query, params);
 }
+const getNombre = async(nombre) => {
+    const query = "SELECT p.id, p.nombre, p.descripcion, p.precio, p.stock, p.id_categoria, c.nombre AS nombreCategoria FROM ?? AS p JOIN ?? AS c ON p.id_categoria = c.id WHERE p.nombre LIKE ? AND p.eliminado = 0";
+    const params = [process.env.T_PRODUCTOS, process.env.T_CATEGORIAS, nombre];
+    const rows = await pool.query(query, params);
+    return rows;
+}
 
 
 
-
-module.exports = {getAll, getSingle, create, update, del}
+module.exports = {getAll, getSingle, create, update, del, getNombre}
